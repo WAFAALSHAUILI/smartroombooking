@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#schedule-table th, #schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.available {
+    background-color: #e6f7ff;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #87cefa;
+}
+
+.booked {
+    background-color: #ffc0cb;
+    pointer-events: none;
+}
+
+.disabled {
+    background-color: #f0f0f0;
+    pointer-events: none;
+}

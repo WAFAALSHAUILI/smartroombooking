@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز القاعة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حجز القاعة</h1>
+
+        <!-- حقل اختيار الأسبوع -->
+        <label for="week">اختر الأسبوع</label>
+        <input type="week" id="week" required>
+
+        <!-- جدول الحصص الأسبوعي -->
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th>اليوم</th>
+                    <th>الحصة الأولى</th>
+                    <th>الحصة الثانية</th>
+                    <th>الحصة الثالثة</th>
+                    <th>الحصة الرابعة</th>
+                    <th>الحصة الخامسة</th>
+                    <th>الحصة السادسة</th>
+                    <th>الحصة السابعة</th>
+                    <th>حصة النشاط</th>
+                    <th>وقت الطابور</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- سيتم ملء الجدول ديناميكيًا عبر JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- نموذج إدخال البيانات يظهر عند اختيار الحصة -->
+        <div id="booking-form" style="display: none;">
+            <label for="teacher-name">اسم المعلم</label>
+            <input type="text" id="teacher-name" required>
+
+            <label for="subject">المادة</label>
+            <input type="text" id="subject" required>
+
+            <label for="class">الصف</label>
+            <input type="text" id="class" required>
+
+            <button onclick="confirmBooking()">تأكيد الحجز</button>
+        </div>
+
+        <!-- رسالة تأكيد -->
+        <div id="notification" style="display: none; color: green;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
